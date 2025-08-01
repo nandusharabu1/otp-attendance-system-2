@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OTP Attendance System</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      padding: 12px;
+      width: 80%;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #ffffff;
+      color: #2575fc;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e2e2e2;
+    }
+
+    a {
+      color: #ffdf5e;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Mark Your Attendance</h2>
+    <form action="https://9a2afc15-1e40-42b6-8204-77d58e85c924-00-1fyq6i75vtn1u.pike.replit.dev/verify-otp" method="POST">
+      <input type="text" name="otp" placeholder="Enter OTP" required />
+      <br><br>
+      <button type="submit">Submit OTP</button>
+    </form>
+    <br>
+    <a href="https://9a2afc15-1e40-42b6-8204-77d58e85c924-00-1fyq6i75vtn1u.pike.replit.dev/generate-otp" target="_blank">
+      👉 Teacher? Generate OTP
+    </a>
+  </div>
+</body>
+</html>
