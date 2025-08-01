@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OTP Attendance</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding: 50px; }
+        input { padding: 10px; width: 200px; }
+        button { padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <h2>Enter OTP to Mark Attendance</h2>
+    <form action="https://9a2afc15-1e40-42b6-8204-77d58e85c924-00-1fyq6i75vtn1u.pike.replit.dev/verify-otp" method="POST">
+        <input type="text" name="otp" placeholder="Enter OTP" required />
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
